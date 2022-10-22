@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Ejemplo web api</title>
+	<meta charset="utf-8" />
+	<LINK REL=StyleSheet HREF="estilo.css" TYPE="text/css" MEDIA=screen>
+	<script src="codigo.js"></script>
+
+</head>
+
+<body>
+	<div style="display: flex; justify-content:center; align-items:center; flex-direction: column;">
+		<h1>… Guia 61c - web api …</h1>
+		<p>… <b>Nombre:</b> Cristian Rodolfo Alvarez Dominguez …</p>
+		<p>… <b>Carnet:</b> AD17006 …</p>
+		<p>… <b>Materia:</b> TPI115 …</p>
+		<p>… <b>GL:</b> #03 …</p>
+		<p>… <b>Grupo de trabajo:</b> #05 …</p>
+		<p><button onclick="obtenerProductos();this.style.display='none';">Obtener Productos</button></p>
+	</div>
+
+	<div id="listado" style="display: flex; justify-content:center; align-items:center; text-align: center;">
+		<form name="filtroprods" id="filtroprods">
+			Seleccione Categorias
+			<input type="checkbox" id="c1" value="c1" checked>Electr&oacute;nicos
+			<input type="checkbox" id="c2" value="c2" checked>Joyer&iacute;a
+			<input type="checkbox" id="c3" value="c3" checked>Ropa Caballero
+			<input type="checkbox" id="c4" value="c4" checked>Ropa Dama
+			<ol>
+				<li>*Click en la imagen para Acercamiento</li>
+				<li>*Click en precio para ordenar <i> ascendentemente o descendentemente.</i></li>
+			</ol>
+			<table id="tabla" border="1">
+				<thead>
+					<tr style="background-color: lightgreen;">
+						<th>id</th>
+						<th>foto</th>
+						<th id="price">Precio</th>
+						<th>Titulo</th>
+						<th>Descripci&oacute;n</th>
+						<th>categor&iacute;a</th>
+					</tr>
+				</thead>
+				<tbody id="tbody" style="background-image: linear-gradient(to bottom right, lightblue, #fff);"></tbody>
+			</table>
+		</form>
+	</div>
+	<footer>
+		<p style="text-align:center; background-color: lightblue;"> T&eacute;nicas de Programaci&oacute;n para Internet - TPI15 <br> Facultad de Ingenier&iacute;a y Arquitectura (FIA) <br> Universidad de El Salvador 2022</p>
+	</footer>
+</body>
+
+</html>
